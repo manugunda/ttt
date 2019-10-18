@@ -130,6 +130,10 @@
     line-height: 20px;
     text-align: left;
 }
+.mn_bg img{
+  width: 100%;
+  margin: 10px 0;
+}
   /* Navbar */
   nav {
     padding: 20px 15px;
