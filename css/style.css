@@ -52,7 +52,7 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: #b8a07e;
+  color:#00cffd;
   text-decoration: underline;
 }
 
@@ -92,7 +92,7 @@ p {
 }
 
 .btn {
-  background: #2ecbc4;
+  background: #00cffd;
   border: medium none;
   border-radius: 0;
   color: #fff !important;
@@ -141,7 +141,7 @@ p {
   color:#000; 
 }
 .section-title h2 i{
-  color:#2fc8ca; 
+  color:#00cffd; 
 }
 
 .form-control {
@@ -192,12 +192,7 @@ p {
 
 nav {
   position: fixed;
-  /*background: #09aff6;*/
-/*  background:rgba(9,175,246,0.5);*/
-  /*background:rgba(11,156,250,0.5);*/
-    background:rgba(50,50,50,0.6);
-   /*   background-image: -webkit-linear-gradient(45deg, #2fec9a 0%, #2fb1ec 100%);
-    background-image: linear-gradient(45deg, #2fec9a 0%, #2fb1ec 100%);*/
+    background:#fff;
   z-index: 1000;
   width: 100%;
   padding:5px;
@@ -227,7 +222,7 @@ nav ul li a {
   position: relative;
   display: block;
   font-size: 14px;
-  color: #fff;
+  color: #333;
   font-family: 'Poppins', helvetica;
   font-weight: 500;
   line-height: 16px;
@@ -253,18 +248,16 @@ nav ul li a:hover {color: #06a8f1;}
 
 
 .active {
-  color: #fff !important;
+  color: #2acad8 !important;
 }
 
 /*----------------------------------------------------------------------------------*/
 /*  Header
 /*-----------------------------------------------------------------------------------*/
 
-#header {
-  background: url("../images/home-bg.jpg") repeat scroll center center / cover;
-  height: 100vh;
-  width: 100%;
- 
+.mn_bg{
+  float: right;
+  width: 100%
 }
 .html {
   background: url("../images/bnrh.jpg") no-repeat scroll center center / cover;
@@ -286,11 +279,10 @@ nav ul li a:hover {color: #06a8f1;}
   background-size:cover;  
 }
 
-
 #header:before {
 content: '';
 position:absolute;
-background:rgba(50,50,50,0.5);
+background:rgba(0,0,0,0.05);
 top:0px;
 left:0px; 
 width: 100%; 
@@ -299,7 +291,9 @@ height: 100vh;
 }
 
 
-
+a.square_btn i{
+  color: #fff;
+}
 #header .header-content {
   height: 100vh;
   text-align: left;
@@ -309,6 +303,7 @@ height: 100vh;
   flex-direction: column;
   z-index: 9;
   position: relative;
+  color: #00cffd
 }
 
 .header-content h1 {
@@ -316,7 +311,7 @@ height: 100vh;
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #fff;
+  color: #00cffd;
 }
 
 .header-content p {
@@ -325,18 +320,13 @@ height: 100vh;
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: capitalize;
-  color: #fff;
+  color: #333;
   font-weight: 500;
 }
-
-.header-content .list-social li {
-  float:left;
-  margin-right: 20px;
-}
-
-.header-content .list-social li i {
-  color: #fff;
+.header-content i {
+  color: #00cffd;
   font-size: 18px;
+  width: 35px;
 }
 h5.bl{
   font-size:18px !important; 
@@ -627,7 +617,7 @@ h5.bl{
     padding: 0px 0px 10px 0px;
 }
 .section-title i {
-  color:#2fc8ca; 
+  color:#00cffd; 
 }
 .timeline {
     border-left: 3px solid #666;
@@ -662,7 +652,7 @@ h5.bl{
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: #fff;
-  border: 3px solid #2ecbc4;
+  border: 3px solid #00cffd;
 }
 /*.timeline .item:after {
   content: "";
@@ -691,7 +681,8 @@ h5.bl{
   position: absolute;
   right: 0;
   top: 2px;
-  color: #2ecbc4;
+  color:#00cffd;
+  font-weight: 400;
 }
 .timeline .location .fa {
   margin-right: 5px;
@@ -797,7 +788,7 @@ h5.bl{
   line-height:22px; 
   color:#000;  
 }
-.contact-contact h2 i{ color:#2fc8ca;}
+.contact-contact h2 i{ color:#00cffd;}
 
 .contact-contact p {
   margin:10px 0px 0px 0px;
@@ -884,4 +875,64 @@ h5.bl{
 
 .credits {
   font-size: 13px;
+}
+
+
+
+
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.gallery_product img{
+  width: 100%;
+  border: solid 1px #ddd;
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
 }
